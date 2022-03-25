@@ -1,0 +1,12 @@
+node {
+    stage('clone') {
+    git 'https://github.com/jatlaouiroua/java/Hello.java'
+    }
+    stage('Build') {
+    sh label: '', script: 'javac Hello.java'
+    }
+    stage('run') {
+    sh label: '', script: 'java Hello'
+    }
+}
+
