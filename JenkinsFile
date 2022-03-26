@@ -1,6 +1,6 @@
 node {
     stage('clone') {
-    git 'https://github.com/jatlaouiroua/java/Hello.java'
+    git 'https://github.com/jatlaouiroua/java.git'
     }
     stage('Build') {
     sh label: '', script: 'javac Hello.java'
